@@ -1,13 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type FormEvent } from "react";
-
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { supabase } from "@/integrations/supabase/client";
-import ddr5 from "@/assets/ddr5-gaming-pc.jpg.asset.json";
-import gtx1080 from "@/assets/gtx1080-gaming-pc.jpg.asset.json";
-import gtx1070 from "@/assets/gtx1070-gaming-pc.jpg.asset.json";
-import p1080 from "@/assets/1080p-gaming-pc.jpg.asset.json";
+const ddr5 = "/images/ddr5-gaming-pc.jpg";
+const gtx1080 = "/images/gtx1080-gaming-pc.jpg";
+const gtx1070 = "/images/gtx1070-gaming-pc.jpg";
+const p1080 = "/images/1080p-gaming-pc.jpg";
 import { BUSINESS, buildLocalBusinessJsonLd } from "@/lib/business";
 import { REVIEWS } from "@/lib/reviews";
 
